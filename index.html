@@ -5,51 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CreativeTextAnimation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins" , sans-serif;
-    }
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: #252839;
-    }
-    h2{
-        position: relative;
-        font-size: 7vw;
-        color: #252839;
-        -webkit-text-stroke: 0.3vw #383d52;
-        text-transform: uppercase ;
-    }
-    h2::after{
-        content: attr(data-text);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        color: rgb(255, 0, 119);
-        -webkit-text-stroke: 0.1vw #ffffff;
-        text-shadow: 0px 0px 2px #ff00cb;
-        border-right: 2px solid #01fe87;
-        overflow: hidden;
-        animation:animate 6s linear infinite;
-    }
-    @keyframes animate {
-        0%,10%,100% {
-            width: 0;
-        }
-        70%,90% {
-            width: 100%;
-        }
-    }
-</style>
 <body>
     <h2 data-text="Nermeen_Hagag...">Nermeen_Hagag...</h2>
 </body>
